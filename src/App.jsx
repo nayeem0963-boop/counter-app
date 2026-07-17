@@ -2,6 +2,9 @@ import { useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
+  
+ const [step, setStep] = useState(1);
+
 
   
 const increase = () => {
@@ -12,8 +15,6 @@ const decrease = () => {
   setCount(prev => (prev >= step ? prev - step : 0));
 };
 
-
-const [step, setStep] = useState(1);
 
     
 
